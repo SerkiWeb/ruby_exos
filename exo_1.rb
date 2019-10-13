@@ -39,7 +39,12 @@ jobs.each do |job|
 end
 
 puts "-------------------------------"
-print "Total | "
-tableau_final.each do |key, value| 
-	print key + " | "
+tableau_final.each do |key, value|
+	puts key + " categorie : "
+	value.each do |key, value|
+		puts "contrat #{key} : #{value}"
+	end
 end
+
+
+

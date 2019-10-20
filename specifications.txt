@@ -1,0 +1,20 @@
+Plan de Test
+
+Création d'un candidat 
+1. Je suis sur une offre quelconque , je clique sur le bouton '+' pour ajouter un candidat. Résultat : le formulaire d'ajout doit apparaître et le bouton enregistrer est grisé.
+2. Je suis sur une offre quelconque , je clique sur le bouton '+' pour ajouter un candidat. Je remplis le champs mail avec un mail non conforme Résultat : une icône d'erreur doit apparaître et le bouton enregistrer est grisé. Rajout d'un message textuel explicite
+3. Je suis sur une offre quelconque , je clique sur le bouton '+' pour ajouter un candidat. Je remplis les champs obligatoire,Résultat : le bouton 'enregistrer apparaît.
+4. Je suis sur une offre quelconque , je clique sur le bouton '+' pour ajouter un candidat. Je remplis les champs obligatoire,  je clique sur enregistrer. Résultat : Le profil du candidat apparaît dans le pipeline et les informations du candidat sont conforme à celle saisies.
+5. Je suis sur une offre quelconque , je clique sur le bouton '+' dans la colonne X pour ajouter un candidat. Je remplis les champs obligatoire,  je clique sur enregistrer. Résultat : Le profil du candidat apparaît dans le pipeline et la colonne X et les informations du candidat sont conforme à celle saisies.
+
+Modification d'un candidat
+6. Je suis sur un offre qui comporte des candidats, Je clique sur un candidat et je modifie son status. Résultat :   la position du candidat dans le pipeline doit etre prise en compte.
+7. Je suis sur un offre qui comporte des candidats, Je clique sur un candidat et j'ajoute un commentaire. Résultat : Le commentaire est visible 
+8. Je suis sur un offre qui comporte des candidats, Je clique sur un candidat et j'ajoute un commentaire qui contient du code js (faille xss). Résultat : Le commentaire est visible mais le site est insensible à l'injection.
+9. Je suis sur un offre qui comporte des candidats, Je clique sur un candidat et j'ajoute un commentaire de tres grande longueur. Résultat : Le commentaire est visible , un changement des spécifications imposant une longueur limite. 
+10. Je suis sur un offre qui comporte des candidats, Je clique sur un candidat et j'ajoute un
+tag  Résultat : Le tag est visible
+11. Je suis sur un offre qui comporte des candidats, Je clique sur un candidat et j'ajoute un  tag d'une longueur supérieur à 30  Résultat : L'ajout de tag est impossible
+12. Je suis sur un offre qui comporte des candidats, Je clique sur un candidat et j'ajoute un  tag d'une longueur supérieur à 30  Résultat : L'ajout de tag est impossible
+13. Je suis sur un offre qui comporte des candidats, Je clique sur un candidat, je clique sur le bouton suivre. Résultat : dans l'encart candidat du pipeline mon profil apparaît comme follower.
+

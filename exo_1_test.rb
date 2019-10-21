@@ -18,6 +18,10 @@ class TestProfessions < Test::Unit::TestCase
 		assert_equal(0, pro.totalOffres)
 	end
 
-	def parseCSVFileJob
+	def test_parseCSVFileJob
+		pro = Professions.new('appendix/technical-test-professions.csv', 'appendix/technical-test-jobs.csv')
+		pro.parseCSVFileProfessions()
+		pro.parseCSVFileJob()
+		assert_equal(5000, pro.totalOffres)		
 	end
 end
